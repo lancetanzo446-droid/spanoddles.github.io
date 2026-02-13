@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobles Spa - Massage • Therapy • Relaxation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nobles Spa</h1>
+            <p>Massage • Therapy • Relaxation</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>At Nobles Spa, we believe in the power of relaxation and wellness. Our professional therapists are dedicated to providing a serene environment where you can unwind, rejuvenate, and achieve ultimate bliss. Experience the art of massage and therapy in a luxurious setting designed for your comfort and peace of mind.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-hand-paper"></i>
+                    <h3>Massage Therapy</h3>
+                    <p>Indulge in our expert massage techniques to relieve stress and tension, promoting overall well-being.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-spa"></i>
+                    <h3>Body Relaxation</h3>
+                    <p>Deep relaxation treatments designed to soothe your body and mind in a tranquil atmosphere.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Ear cleaning</h3>
+                    <p>A safe and professional service that removes excess earwax and buildup to improve ear hygiene and hearing clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose" class="section why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <ul>
+                <li><i class="fas fa-user-md"></i><br>Professional Therapists</li>
+                <li><i class="fas fa-broom"></i><br>Clean Environment</li>
+                <li><i class="fas fa-lock"></i><br>Private Rooms</li>
+                <li><i class="fas fa-tags"></i><br>Affordable Packages</li>
+                <li><i class="fas fa-peace"></i><br>Relaxing Atmosphere</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Staff</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="ASSETS/staff 3.png" alt="Spa interior"></div>
+                <div class="gallery-item"><img src="ASSETS/staff 2.png" alt="Massage room"></div>
+                <div class="gallery-item"><img src="ASSETS/staff 1.png" alt="Candles and stones"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>SOCIAL MEDIA PLATFORMS</h3>
+                    <p><strong>Phone:</strong> Viber -09243988982 |Whatsapp-09243988983
+</p>
+                    <a href="https://wa.me/09669870420" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <div class="wechat-qr">
+                        <p><strong> QR :</strong></p>
+                        <img src="ASSETS/QR.jpg" alt="WeChat QR Code" style="width: 150px; height: 150px;">
+                        <img src="ASSETS/QR 1.png" alt="WeChat QR Code" style="width: 150px; height: 150px;">
+                    </div>
+                    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/people/NOBLE-body-Relaxing/61587324673187/" target="_blank">Noble body Relaxing</a></p>
+                </div>
+            <div class="map">
+                <p></p>
+                <!-- Replace with actual Google Maps embed code -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <p>WEEKDAYS: 24 HOURS OPEN</p>
+                    <p>WEEKENDS: 24 HOURS OPEN</p>
+                </div>
+                <p>&copy; 2026 Nobles Spa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler (logs to console for demo)
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            console.log('Form submitted:', Object.fromEntries(formData));
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
